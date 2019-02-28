@@ -1,0 +1,168 @@
+:root {
+    --fuentePrincipal: Tahoma, Geneva, sans-serif;
+    --primario: #b4b5eb;
+    --primarioClaro: #909096;;
+    --primarioOscuro: #6d6d77;
+    --secundario: #7c1d1d;
+    --terciario: #050505;
+    --fondoMain: #b8b3b3;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    background-color: var(--primario);
+    color: var(--terciario);
+    line-height: 1.5;
+    font-size: 2rem;
+}
+
+h1 {
+    color: var(--terciario);
+    text-align: center;
+}
+
+h3, h4 {
+    margin: auto;
+}
+
+hr {
+    border: none;
+    border-top: 0.25rem dotted;
+}
+
+ul.grados {
+    list-style: none;
+}
+
+img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+@media(min-width:768px) {
+    img {
+        width: 220px;
+    }
+}
+
+span {
+    color: var(--secundario);
+}
+
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+}
+
+div.encabezado {
+    background-color: var(--primarioOscuro);
+}
+
+ul.datos {
+    list-style: none;
+}
+
+header.encabezado {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    line-height: 3.5rem;
+    grid-template-rows: repeat(2, auto);
+}
+
+@media(min-width:768px) {
+    header.encabezado {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+.encabezado.informacion {
+    margin: auto;
+}
+
+main {
+    text-align: justify;
+    background-color: var(--fondoMain);
+    padding: 5rem;
+}
+
+.icono {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: var(--primarioOscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: auto;
+}
+
+.titulo-contenido {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 25%);
+}
+
+
+.estudios .titulo-contenido, .habilidades .titulo-contenido,
+.experiencia .titulo-contenido{
+    margin-top: 3rem;
+}
+
+.habilidades .software, .habilidades .idiomas {
+    margin: 2rem;
+    table-layout: auto;
+    width: 100%;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr#titulos {
+    color: var(--secundario);
+    background-color: var(--primarioOscuro);
+}
+
+.experiencia li{
+    margin: 4rem 0;
+}
+
+.experiencia .entradas a {
+    text-decoration: none;
+    color: var(--secundario);
+    background-color: var(--primarioOscuro);
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.experiencia .entradas a:hover{
+    background-color: var(--primarioClaro);
+}
+
+footer.pie-pagina {
+    background-color: var(--primarioOscuro);
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#info {
+    margin-top: 1rem;
+}
