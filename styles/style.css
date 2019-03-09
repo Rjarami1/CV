@@ -32,6 +32,7 @@ h1 {
 
 h3, h4 {
     margin: auto;
+    margin-top: 2rem;
 }
 
 hr {
@@ -97,7 +98,7 @@ p {
 
 main {
     background-color: var(--fondoMain);
-    padding: 5rem;
+    padding: 5rem 3rem;
 }
 
 .icono {
@@ -133,7 +134,7 @@ main {
 }
 
 .habilidades .software, .habilidades .idiomas {
-    margin: 2rem;
+    margin: auto;
     table-layout: auto;
     width: 100%;
     text-align: center;
@@ -172,6 +173,18 @@ footer.pie-pagina {
     font-size: 1.5rem;
     padding: 2rem;
     text-align: center;
+}
+
+.pie-pagina a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--secundario);
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    display: inline-block;
 }
 
 #info {
