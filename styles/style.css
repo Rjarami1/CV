@@ -35,6 +35,12 @@ h3, h4 {
     margin-top: 2rem;
 }
 
+h4#titulo-prof{
+    margin: 0;
+    color: var(--secundario);
+    font-weight: bold;
+}
+
 hr {
     border: none;
     border-top: 0.25rem dotted;
@@ -71,6 +77,7 @@ div.encabezado {
 
 ul.datos {
     list-style: none;
+    padding: 0;
 }
 
 header.encabezado {
@@ -88,7 +95,7 @@ header.encabezado {
     }
 }
 
-.encabezado.informacion {
+.informacion {
     margin: auto;
 }
 
